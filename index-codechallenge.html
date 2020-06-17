@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <!-- Additional CSS must be placed after Bootsrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleschallenge.css">
+
+    <title>NuCamp: A Better Way to Camp</title>
+</head>
+
+<body class="bodyindex">
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top justify-content-end center">
+        <div class="container">
+            <!-- <a href="#" class="navbar-brand active"><img src="img/logo.png" height="30" width="30"></a> -->
+            <div class="collapse navbar-collapse navbar-inner" id="nucampNavbar">
+                <ul class="navbar-nav navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                            About</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item "><a class="nav-link" href="contactus.html"><i
+                                class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login </a>
+
+                </span>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- JUMBOTRON -->
+    <header class="jumbotron jumbotron-fluid" style="opacity: 0.9;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/logo.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1 style="color: blueviolet;">NuCamp</h1>
+                    <h2 style="color: hotpink;">a better way to camp</h2>
+                </div>
+                <div class="col-md-4 col-xl-2">
+                    <div class="row">
+                        <a href="#reserveForm" type="button" class="btn btn-info btn-lg" data-toggle="tooltip"
+                            data-html="true" data-placement="bottom"
+                            title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV BAR -->
+
+
+
+
+
+    <!-- NAV BAR -->
+
+    <!-- MODAL -->
+    <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="loginEmail" class="sr-only">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="loginPassword" class="sr-only">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button class="btn btn-secondary btn-sm ml-auto" type="button"
+                                    data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREAD MODAL -->
+    <div class="modal fade" role="dialog" id="breadtrailModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Breadcrumb Trails</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Breadcrumb Trails is one of our most popular trails in the country! </p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi molestiae corporis unde quidem
+                        vero odio ea tempora voluptatibus hic provident, dolores cupiditate pariatur natus eum minus
+                        earum voluptatem. Possimus, assumenda?</p>
+                </div>
+                <a href="#reserveForm" type="button" class="btn btn-info btn-lg">Reserve Campsite</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- BREAD MODAL -->
+
+    <!-- ReactLake MODAL -->
+    <div class="modal fade" role="dialog" id="reactlakeModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <h3 class="modal-title">React Lake</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>React Lake is one a great place to hang out with friends and family! </p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi molestiae corporis unde
+                            quidem
+                            vero odio ea tempora voluptatibus hic provident, dolores cupiditate pariatur natus eum minus
+                            earum voluptatem. Possimus, assumenda?</p>
+                    </div>
+
+                </div>
+                <a href="#reserveForm" type="button" class="btn btn-info btn-lg">Reserve Campsite</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ChromeRiver Modal -->
+    <div class="modal fade" role="dialog" id="chromeriverModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Chrome River</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Chrome River is a great quite place to relax and enjoy nature! </p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi molestiae corporis unde
+                            quidem
+                            vero odio ea tempora voluptatibus hic provident, dolores cupiditate pariatur natus eum minus
+                            earum voluptatem. Possimus, assumenda?</p>
+                    </div>
+
+                </div>
+                <a href="#reserveForm" type="button" class="btn btn-info btn-lg">Reserve Campsite</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- END MODALS -->
+
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card card-camps h-100" style="width: 18rem; min-height: 200px;">
+                    <img class="card-img-top" src="img/breadcrumb-trail-thumb.jpg" alt="Card image cap"
+                        style="height: 285px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Breadcrumb Trails</h5>
+                        <p class="card-text">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only
+                            campground. Explore our growing database of campsites! Check the reviews!</p>
+                        <span class="navbar-text ml-auto">
+                            <a data-toggle="modal" data-target="#breadtrailModal">
+                                <i class="fa fa-angle-double-right btn btn-primary"></i> Click for more information </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-camps h-100" style="width: 18rem; min-height: 200px;">
+                    <img class="card-img-top" src="img/react-lake-thumb.jpg" alt="Card image cap"
+                        style="height: 285px;">
+                    <div class="card-body">
+                        <h5 class="card-title">React Lake</h5>
+                        <p class="card-text">Nestled in the foothills of the Chrome Mountains, this campground on the
+                            shores of the pristine React Lake is a favorite for fly fishers.</p>
+                        <span class="navbar-text ml-auto">
+                            <a data-toggle="modal" data-target="#reactlakeModal">
+                                <i class="fa fa-angle-double-right btn btn-primary"></i> Click for more information </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-camps h-100" style="width: 18rem; min-height: 200px;">
+                    <img class="card-img-top" src="img/chrome-river-thumb.jpg" alt="Card image cap"
+                        style="height: 285px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Chrome River</h5>
+                        <p class="card-text">Spend a few sunny days and starry nights beneath a canopy of old-growth
+                            firs at this enchanting spot by the Chrome River.</p>
+                        <span class="navbar-text ml-auto">
+                            <a data-toggle="modal" data-target="#chromeriverModal">
+                                <i class="fa fa-angle-double-right btn btn-primary"></i> Click for more information </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- reserve card -->
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col col-md-8 col-lg-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                <label for="numCampers" class="col-form-label col-sm-5">Number of
+                                    Campers</label>
+                                <div class="col">
+                                    <select class="form-control" name="numCampers" id="numCampers">
+                                        <option>Please Select...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="date" class="col-form-label col-sm-5">Date</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" name="date" id="date">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <a href="#" class="btn btn-primary">Reserve</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="tel:+12065551234" role="button" class="btn btn-link"> <i class="fa fa-phone"></i>
+                        1-206-555-1234</a> <br />
+                    <a href="mailto:camosites@nucamp.co" class="btn btn-link"><i class="fa fa-envelope-o"></i>
+                        campsites@nucamp.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
